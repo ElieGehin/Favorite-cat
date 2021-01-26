@@ -1,0 +1,8 @@
+<h1>{{ cat.name }}</h1>
+<div class="attribute">
+  <ul>
+    <li>Color : {{ cat.color }}</li>
+    <li>Personality : {{ cat.personality }}</li>
+  </ul>
+</div>
+<button (click)="favorite.emit(cat.name)">My favorite cat !</button>

@@ -1,0 +1,7 @@
+<h1>Choose your favorite cat !</h1>
+<div *ngFor="let cat of cats">
+  <app-cat-details
+    [cat]="cat"
+    (favorite)="declaration($event)"
+  ></app-cat-details>
+</div>
